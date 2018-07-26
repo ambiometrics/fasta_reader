@@ -40,11 +40,11 @@ EOF
 
         $sequences = iterator_to_array($reader);
         $this->assertEquals(3, count($sequences));
-        $this->assertEquals('A1', $sequences[0]->getName());
+        $this->assertEquals('A1', $sequences[0]->getDescription());
         $this->assertEquals('gatcctccat', $sequences[0]->getData());
-        $this->assertEquals('A2', $sequences[1]->getName());
+        $this->assertEquals('A2', $sequences[1]->getDescription());
         $this->assertEquals('atacaacggt', $sequences[1]->getData());
-        $this->assertEquals('A3', $sequences[2]->getName());
+        $this->assertEquals('A3', $sequences[2]->getDescription());
         $this->assertEquals('atctccacct', $sequences[2]->getData());
 
     }
